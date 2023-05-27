@@ -1,17 +1,17 @@
-const virtualModuleId = "virtual:adminui";
+const virtualModuleId = "adminui";
 const resolvedVirtualModuleId = "\0" + virtualModuleId;
 
 export default function vitePluginAdminui() {
-    return {
-        name: "vite-plugin-adminui",
-        resolveId(id) {
-            if (id === virtualModuleId) {
-                return resolvedVirtualModuleId;
-            }
-        },
-        load(id) {
-            if (id === resolvedVirtualModuleId) {
-                return `const namespace = globalThis.$adminui;
+  return {
+    name: "vite-plugin-adminui",
+    resolveId(id) {
+      if (id === virtualModuleId) {
+        return resolvedVirtualModuleId;
+      }
+    },
+    load(id) {
+      if (id === resolvedVirtualModuleId) {
+        return `const namespace = globalThis.$adminui;
 
                 export const ref = namespace.ref;
                 export const computed = namespace.computed;
@@ -44,7 +44,7 @@ export default function vitePluginAdminui() {
                 export const Link = namespace.Link;
                 export const Head = namespace.Head;
                 `;
-            }
-        },
-    };
+      }
+    },
+  };
 }
