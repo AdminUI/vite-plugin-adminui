@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-adminui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Helper plugin for AdminUI-based sites that want to extend its functionality",
   "type": "module",
   "main": "./index.js",
