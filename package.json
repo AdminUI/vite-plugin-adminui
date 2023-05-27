@@ -1,0 +1,21 @@
+{
+    "name": "vite-plugin-adminui",
+    "version": "1.0.0",
+    "description": "Helper plugin for AdminUI-based sites that want to extend its functionality",
+    "main": "index.js",
+    "type": "module",
+    "keywords": [
+        "adminui",
+        "vite",
+        "plugin"
+    ],
+    "author": "southcoastweb",
+    "contributors": [
+        {
+            "name": "Craig Riley",
+            "email": "c.riley@southcoastweb.co.uk"
+        }
+    ],
+    "license": "BSD-3-Clause",
+    "homepage": "https://adminui.co.uk"
+}
