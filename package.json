@@ -12,10 +12,12 @@
     }
   },
   "peerDependencies": {
-    "vite": "^3 || ^4"
+    "vite": "^3 || ^4",
+    "vue": "^2.7.0 || >=3.0.0"
   },
   "files": [
-    "dist"
+    "dist",
+    "module.d.ts"
   ],
   "scripts": {
     "build": "vite build",
@@ -36,6 +38,7 @@
   "license": "BSD-3-Clause",
   "homepage": "https://adminui.co.uk",
   "devDependencies": {
-    "vite": "^4.3.9"
+    "vite": "^4.3.9",
+    "vue": "^2.7.0"
   }
 }
