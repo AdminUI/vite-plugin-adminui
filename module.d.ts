@@ -9,7 +9,7 @@ declare module "adminui" {
     method: "PATCH" | "GET" | "POST" | "PUT" | "DELETE";
     idField: string;
     initialData: Record<string, unknown>;
-    key: string | Vue.InjectionKey;
+    key: string | Vue.InjectionKey<string>;
     transforms: Record<string, (value: unknown) => unknown>;
     reload: Array<string>;
   }
@@ -17,6 +17,12 @@ declare module "adminui" {
   export function ref<T extends Vue.Ref>(value: T): T;
   export function ref<T>(value: T): Vue.Ref<Vue.UnwrapRef<T>>;
   export function ref<T = any>(): Vue.Ref<T | undefined>;
+
+  export const watch: (
+    expOrFn: string | (() => any),
+    cb: Function,
+    options?: Record<string, any>
+  ) => Function;
 
   export function reactive<T extends object>(
     target: T
@@ -32,8 +38,8 @@ declare module "adminui" {
   ): Vue.WritableComputedRef<T>;
 
   interface ApiForm {
-    form: Vue.Reactive<object>;
-    formErrors: Vue.Reactive<object>;
+    form: object;
+    formErrors: object;
     formIsInit: Vue.Ref<boolean>;
     pauseUpdates: () => void;
     formIsSaving: Vue.Ref<boolean>;
