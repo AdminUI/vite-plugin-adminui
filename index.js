@@ -42,7 +42,6 @@ export default function vitePluginAdminui() {
                 export const isReadonly = namespace.isReadonly;
                 export const shallowRef = namespace.shallowRef;
                 export const h = namespace.h;
-                export const resolveComponent = namespace.resolveComponent;
 
                 export const useApiForm = namespace.useApiForm;
                 export const useCheckPermissions = namespace.useCheckPermissions;
