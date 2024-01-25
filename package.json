@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-adminui",
-  "version": "1.0.9",
+  "version": "1.1.1",
   "description": "Helper plugin for AdminUI-based sites that want to extend its functionality",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -13,7 +13,7 @@
     }
   },
   "peerDependencies": {
-    "vite": "^3 || ^4",
+    "vite": "^3 || ^4 || ^5",
     "vue": "^2.7.0 || >=3.0.0"
   },
   "files": [
@@ -29,17 +29,17 @@
     "vite",
     "plugin"
   ],
-  "author": "southcoastweb",
+  "author": "evomark",
   "contributors": [
     {
       "name": "Craig Riley",
-      "email": "c.riley@southcoastweb.co.uk"
+      "email": "c.riley@evomark.co.uk"
     }
   ],
   "license": "BSD-3-Clause",
   "homepage": "https://adminui.co.uk",
   "devDependencies": {
-    "vite": "^4.3.9",
+    "vite": "^5.0.0",
     "vue": "^2.7.0"
   }
 }

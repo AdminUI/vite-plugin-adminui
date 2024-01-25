@@ -66,6 +66,9 @@ export default function vitePluginAdminui() {
                 export const useRoute = namespace.useRoute;
                 export const Link = namespace.Link;
                 export const Head = namespace.Head;
+
+                export const DefaultLayout = namespace.layouts?.default;
+                export const ProductLayout = namespace.layouts?.product;
                 `;
       }
     },
