@@ -4,6 +4,16 @@ const resolvedVirtualModuleId = "\0" + virtualModuleId;
 export default function vitePluginAdminui() {
   return {
     name: "vite-plugin-adminui",
+    config: () => ({
+      resolve: {
+        alias: {
+          vue: "https://unpkg.com/vue@3/dist/vue.esm-browser.js",
+        },
+      },
+      optimizeDeps: {
+          exclude: ["vue"],
+      },
+    }),
     resolveId(id) {
       if (id === virtualModuleId) {
         return resolvedVirtualModuleId;
