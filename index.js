@@ -71,6 +71,9 @@ export default function vitePluginAdminui({ version = "3" } = {}) {
                 export const shortDateOnly = namespace.shortDateOnly;
                 export const mediumDate = namespace.mediumDate;
                 export const mediumDateOnly = namespace.mediumDateOnly;
+                export const toSlug = namespace.toSlug;
+	              export const capitaliseFirst = namespace.capitaliseFirst;
+	              export const sanitiseFilePath = namespace.sanitiseFilePath;
 
                 export const usePage = namespace.usePage;
                 export const useForm = namespace.useForm;
