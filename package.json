@@ -38,8 +38,5 @@
   ],
   "license": "BSD-3-Clause",
   "homepage": "https://adminui.co.uk",
-  "devDependencies": {
-    "vite": "^5.0.0",
-    "vue": "^2.7.0"
-  }
+  "devDependencies": {}
 }
