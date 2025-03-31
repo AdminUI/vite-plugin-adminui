@@ -2,7 +2,7 @@ const virtualModuleId = "adminui";
 const resolvedVirtualModuleId = "\0" + virtualModuleId;
 
 export default function vitePluginAdminui({ version = "3" } = {}) {
-  const vuePath = parseInt(version,10) === 3 ? "https://unpkg.com/vue@3/dist/vue.esm-browser.js" : "https://unpkg.com/vue@2/dist/vue.esm.browser.js"
+  const vuePath = parseInt(version,10) === 3 ? "https://cdn.jsdelivr.net/npm/vue@3/dist/vue.esm-browser.prod.min.js" : "https://unpkg.com/vue@2/dist/vue.esm.browser.js"
 
   return {
     name: "vite-plugin-adminui",
