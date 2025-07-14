@@ -64,7 +64,19 @@ export default function vitePluginAdminui({ version = "3", mode = "production" }
                 export const isReadonly = namespace.isReadonly;
                 export const shallowRef = namespace.shallowRef;
                 export const h = namespace.h;
+                export const useTemplateRef = namespace.useTemplateRef;
+                export const useId = namespace.useId;
+                export const toValue = namespace.toValue;
+                export const useSlots = namespace.useSlots;
+                export const useAttrs = namespace.useAttrs;
+                export const defineAsyncComponent = namespace.defineAsyncComponent;
+                export const useModel = namespace.useModel;
+                export const hydrateOnIdle = namespace.hydrateOnIdle;
+                export const hydrateOnVisible = namespace.hydrateOnVisible;
+                export const hydrateOnMediaQuery = namespace.hydrateOnMediaQuery;
+                export const hydrateOnInteraction = namespace.hydrateOnInteraction;
 
+                export const debounceWithMemory = namespace.debounceWithMemory;
                 export const useApiForm = namespace.useApiForm;
                 export const useCheckPermissions = namespace.useCheckPermissions;
                 export const useEcho = namespace.useEcho;

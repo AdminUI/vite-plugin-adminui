@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-adminui",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "description": "Helper plugin for AdminUI-based sites that want to extend its functionality",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -13,7 +13,7 @@
     }
   },
   "peerDependencies": {
-    "vite": "^3 || ^4 || ^5 || ^6",
+    "vite": "^3 || ^4 || ^5 || ^6 || ^7",
     "vue": "^2.7.0 || >=3.0.0"
   },
   "files": [
