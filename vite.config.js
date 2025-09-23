@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import { resolve } from "node:path";
+import { nodeExternals } from 'rollup-plugin-node-externals'
 
 export default defineConfig({
   build: {
@@ -10,4 +11,5 @@ export default defineConfig({
       fileName: "index",
     },
   },
+  plugins: [nodeExternals()]
 });

@@ -1,9 +1,9 @@
+import { accessSync, constants as fsConstants } from "node:fs";
 import viteBasicSslPlugin from "@vitejs/plugin-basic-ssl";
 import dictionary from "./importDictionary.js";
-import { loadEnv } from "vite";
-import { accessSync, constants as fsConstants } from "node:fs";
 import { homedir } from "node:os";
 import { join } from "node:path";
+import { loadEnv } from "vite";
 
 const virtualModuleId = "adminui";
 const resolvedVirtualModuleId = "\0" + virtualModuleId;
