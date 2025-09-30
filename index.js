@@ -29,14 +29,14 @@ const resolveServer = (env) => {
 	const watchOptions = {
 		ignored: [
 			"app/**",
-			"**/database/**",
+			"database/**",
 			"**/node_modules/**",
-			"**/packages/**",
-			"**/public/**",
-			"**/routes/**",
-			"storage/**",
-			"**/tests/**",
 			"**/vendor/**",
+			"packages/**",
+			"public/**",
+			"routes/**",
+			"storage/**",
+			"tests/**",
 		],
 	};
 
