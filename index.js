@@ -49,7 +49,7 @@ const resolveServer = (env) => {
     }
 
     // Resolve Valet-Linux HTTPS certificates
-    if (isHttps && isLinux) {
+    if (isHttps && isLinux && !env.VITE_SERVER_HOST) {
         const appDomainURL = new URL(appUrl);
         const domain = appDomainURL.hostname;
         try {
