@@ -42,7 +42,7 @@ const resolveServer = (env) => {
 
 	const appUrl = env.APP_URL;
 	const isLinux = process.platform === "linux";
-	const isHttps = appUrl.startsWith("https");
+	const isHttps = appUrl && appUrl.startsWith("https");
 
 	const serverConfig = {
 		cors: true,
