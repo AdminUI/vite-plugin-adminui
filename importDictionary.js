@@ -52,6 +52,7 @@ export default [
     'useWysiwygImagePicker',
     // Libraries
     'axios',
+    'DataTable',
     // Helpers
     'currency',
     'humanFileSize',
